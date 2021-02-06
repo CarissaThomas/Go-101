@@ -2,6 +2,7 @@ package main
 
 var c, python, java bool // Vars claimed at the function level
 var i, j int = 1, 2  // vars with initialization
+const Pi = 3.14 // Cannot use the := 
 
 func variables() {
 
@@ -21,6 +22,9 @@ func variables() {
 		fmt.Println(implicit1, implicit2, implicit3);
 	}
 
+	func printConstant() {
+		fmt.Println(Pi)
+	}
 	
 
 }
