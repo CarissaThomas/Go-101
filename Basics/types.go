@@ -25,11 +25,19 @@ func types() {
 		fmt.Printf(i, f, b, s);
 	}
 
-	func printTypeConversions () {
+	func printTypeConversions() {
 		var x, y int = 3, 4 
 		var f float64 = math.Sqrt(float64(x*x + y*y))
 		var z uint = uint(f)
 		fmt.Println(x, y, z)
+	}
+
+	func printConstant() {
+		const test = "This is a test"
+		fmt.Println(test);
+
+		const isTest = true;
+		fmt.Println(isTest);
 	}
 
 	
